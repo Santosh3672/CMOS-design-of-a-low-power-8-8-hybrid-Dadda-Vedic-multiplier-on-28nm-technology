@@ -12,7 +12,8 @@ This repository presents the CMOS design of a low power 8×8 hybrid Dadda-Vedic 
 ## Low power full Adder:
 Conventional full adder designed using gates fig1 converted into CMOS level design are not optimized designs. As per the diagram below, a full adder requires 2 XOR gates(12 CMOS each), 2 AND gates(6 CMOS each) and 1 OR gate(6 CMOS each), so a complete full adder design has 36 CMOS. 
 <p align="center">
-<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/FA_GATES.jpg" alt="MarineGEO circle logo" style="height: 300px; width:600px;"/>
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/FA_GATES.jpg" alt="MarineGEO circle logo" style="height: 400px; width:600px;"/><br />
+  Fig1: Gate level Full adder design <br />
 </p>
 
 Various designs are available in literature that design full adders using fewer gates to save power and area. One such design is a 10T full adder that uses 10 CMOS.Fig shows the design.
