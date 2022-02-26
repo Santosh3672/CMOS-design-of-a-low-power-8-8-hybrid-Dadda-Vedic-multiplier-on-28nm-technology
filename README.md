@@ -34,13 +34,25 @@ This type of design requires no VSS or VDD supply; hence it consumes less power 
 So in our design, we are using an energy-efficient [[2](#Reference)] full adder design that doesn’t have the problem of output voltage. This design uses 28 MOSFETs, of which we are connecting 8 MOSFETs to VDD or VSS, so it consumes low power. From the truth table of full adder boolean value of sum is EXOR(A,B) when Cin is ‘0’ and EXNOR(A,B) when Cin is ‘1’ and the boolean value of Cout is A*B when Cin is ‘0’ and A+B when Cin is ‘1’. So in the first stage, we have an inverter with VDD and VSS. In the next stage, we have Exor, Exnor, AND, and OR gates designed with fewer gates and fewer gates connected to VDD and VDD, followed by the final stage is, where we place a mux with Cin as the select line.
 <p align="center">
 <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/LP_FA_design.png" alt="MarineGEO circle logo" style="height: 700px; width: 700px;"/><br />
-  Fig.3: 10T Full adder waveform <br />
+  Fig.4: 28T low power full adder design <br />
 </p>
 
 
-Fig shows the schematic of the design in Synopsys Custom Compiler. While designing, we have assumed μn = 2*μp and to have an un-skewed design, we have taken selected W/L ratio such that βn =  βp. 
+Fig.5 shows the schematic of the design in Synopsys Custom Compiler. While designing, we have assumed μn = 2*μp and to have an un-skewed design, we have taken selected W/L ratio such that βn =  βp. 
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/LP_FA_schematics.jpg" alt="MarineGEO circle logo" style="height: 700px; width: 700px;"/><br />
+  Fig.5: Schematics of 28T energy efficient full adder<br />
+</p>
 
-To test the circuit, we have built a test bench (fig) where we provide all possible digital inputs to the circuit through a pulse signal. Fig shows the input-output waveform. We can observe that the problem of output voltage swing is not present. 
+To test the circuit, we have built a test bench (Fig.6) where we provide all possible digital inputs to the circuit through a pulse signal. Fig.7 shows the input-output waveform. We can observe that the problem of output voltage swing is not present. 
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/LP_FA_tb.png" alt="MarineGEO circle logo" style="height: 700px; width: 700px;"/><br />
+  Fig.6: Testbench used to simulate 28T energy efficient full adder<br />
+</p>
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/LP_FA_wave%20form.png" alt="MarineGEO circle logo" style="height: 700px; width: 700px;"/><br />
+  Fig.7: Waveform of 28T energy efficient full adder<br />
+</p>
 
 ## Reference
  - [1]. Dadda, Luigi (May 1965). "Some schemes for parallel multipliers". Alta Frequenza. 34 (5): 349–356.
