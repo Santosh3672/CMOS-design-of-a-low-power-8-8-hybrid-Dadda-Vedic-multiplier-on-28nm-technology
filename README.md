@@ -85,11 +85,11 @@ Fig.11 shows the schematics of the 4x4 multiplier in Synopsys custom compiler.
   Fig.11: Schematics of 4x4 Dadda multiplier<br />
 </p>
 The waveform of input and output waveform are shown in fig. We can observe that the problem of output voltage swing is not seen here.
-<p float="left">
+<p float="center">
   <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_full.jpg" width="500" />
   <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_half.png" width="500" /> 
- <h2 align="center"><br /> Fig.12: Waveform of 4x4 Dadda multiplier<br />
-  </h2>
+ <p align="center"><br /> Fig.12: Waveform of 4x4 Dadda multiplier<br />
+  </p>
 </p>
 
 ## Reference
