@@ -73,7 +73,7 @@ We can create a multiplier now that we have an optimized full adder and half add
 
 We have illustrated the working of a 4×4 Dadda multiplier in fig. In this method, we generate partial products using AND gates. Then unlike the Wallace tree multiplier in the Dadda multiplier, the partial products are arranged as an inverted triangle to use fewer full and half adders.
 <p align="center">
-<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_dadda_multiplier.jpg" alt="MarineGEO circle logo" style="height: 700px; width: 700px;"/><br />
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_dadda_multiplier.jpg" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
   Fig.10: Design architecture of 4x4 Dadda multiplier<br />
 </p>
 
