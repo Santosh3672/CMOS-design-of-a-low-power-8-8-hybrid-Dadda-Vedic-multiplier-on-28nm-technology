@@ -2,7 +2,7 @@
 This repository presents the CMOS design of a low power 8×8 hybrid Dadda-Vedic multiplier on 28nm technology using Synopsys Custom compiler
 
 ## Table of content 
- * [Abstract](#Abstract:)
+ * [Abstract](#Abstract)
  * [Design Detail](#Design Detail:)
  * [Low power full Adder](#Low power full Adder:)
 
