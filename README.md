@@ -10,6 +10,6 @@ This repository presents the CMOS design of a low power 8×8 hybrid Dadda-Vedic 
 
 
 ## Reference
--[1]. Dadda, Luigi (May 1965). "Some schemes for parallel multipliers". Alta Frequenza. 34 (5): 349–356.
--[2]. C.S. Wallace, A suggestion for a fast multiplier, IEEE Trans. Computers, Vol. 13, pp. 14-17, Feb. 1964.+
--[3]. Mariano Aguirre-Hernandez and Monico Linares-Aranda, “CMOS full adder for energy efficient arithmetic applications” IEEE Transactions on VERY LARGE SCALE INTEGRATION (VLSI) Systems, vol. 19, no. 4, april 2011.
+ - [1]. Dadda, Luigi (May 1965). "Some schemes for parallel multipliers". Alta Frequenza. 34 (5): 349–356.
+ - [2]. C.S. Wallace, A suggestion for a fast multiplier, IEEE Trans. Computers, Vol. 13, pp. 14-17, Feb. 1964.+
+ - [3]. Mariano Aguirre-Hernandez and Monico Linares-Aranda, “CMOS full adder for energy efficient arithmetic applications” IEEE Transactions on VERY LARGE SCALE INTEGRATION (VLSI) Systems, vol. 19, no. 4, april 2011.
