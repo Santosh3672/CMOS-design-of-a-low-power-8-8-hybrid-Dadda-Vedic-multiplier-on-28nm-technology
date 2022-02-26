@@ -100,6 +100,16 @@ To design an 8×8 multiplier, we have used the existing 4x4 Dadda multiplier and
 <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8%20mult-dadda_vedic_hybrid.png" alt="MarineGEO circle logo" style="height: 770px; width: 869px;"/><br />
   Fig.13: Schematics of 4x4 Dadda multiplier<br />
 </p>
+Since there are 16 inputs of the design, it is difficult to change all the design inputs, so for that reason, in our test bench, we have set some inputs as constant by tying them with VDD or VSS and applying pulse signal to other inputs as shown in Fig.14. 
+
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8_mult_tb.jpg" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
+  Fig.13: Schematics of 4x4 Dadda multiplier<br />
+</p>
+
+Fig.15 shows the input and output waveform. 
+
+
 
 ## Reference
   [1]. Dadda, Luigi (May 1965). "Some schemes for parallel multipliers". Alta Frequenza. 34 (5): 349–356. \
