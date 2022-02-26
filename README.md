@@ -8,6 +8,7 @@ This repository presents the CMOS design of a low power 8×8 hybrid Dadda-Vedic 
  * [Low power half adder](#Low-power-half-adder)
  * [Design of 4x4 Dadda multiplier](#Design-of-4x4-Dadda-Multiplier)
  * [Design of 8x8 Dadda-Vedic multiplier](#Design-of-8x8-Dadda-Vedic-multiplier)
+ * [DC analysis](#DC-analysis)
  * [Reference](#Rererence)
 
 
