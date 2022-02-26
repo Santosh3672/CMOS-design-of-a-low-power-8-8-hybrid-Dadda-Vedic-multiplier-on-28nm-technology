@@ -88,8 +88,8 @@ The waveform of input and output waveform are shown in fig. We can observe that 
 <p float="center">
   <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_full.jpg" width="500" />
   <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_half.png" width="500" /> 
- <p align="center"><br /> Fig.12: Waveform of 4x4 Dadda multiplier<br />
-  </p>
+<br /> Fig.12: Waveform of 4x4 Dadda multiplier<br />
+  
 </p>
 
 ## Reference
