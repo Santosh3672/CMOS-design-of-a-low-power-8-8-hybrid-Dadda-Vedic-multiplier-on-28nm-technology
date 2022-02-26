@@ -7,7 +7,7 @@ This repository presents the CMOS design of a low power 8×8 hybrid Dadda-Vedic 
 
 ## Abstract
  Multiplication is a commonly used arithmetic operation; hence a multiplier is used in most digital systems like ALU of Microprocessor,  DSP applications such as image processing, and arithmetic related operation. A multiplier is a significant design that primarily uses full adders and half adders that consume a large portion of the area and power of the design. In this report, we have designed an 8×8 Dadda-Vedic tree multiplier with the advantage of the Dadda multiplier[1](#Reference) by utilizing less full adder and half adder than conventional Wallace tree design[2] and also uses the advantage of the scalability of a Vedic multiplier. We have also presented an energy-efficient full adder[2] and a half adder that we are using in our design. We have used Synopsys custom compiler tool for the design using 28nm technology libraries.
-
+<span style="text-decoration:overline">SIGNAL_ACTIVE_LOW</span>
 ## Design Detail:
 ## Low power full Adder:
 Conventional full adder designed using gates (Fig.1) converted into CMOS level design are not optimized designs. As per the diagram below, a full adder requires 2 XOR gates(12 CMOS each), 2 AND gates(6 CMOS each) and 1 OR gate(6 CMOS each), so a complete full adder design has 36 CMOS.
