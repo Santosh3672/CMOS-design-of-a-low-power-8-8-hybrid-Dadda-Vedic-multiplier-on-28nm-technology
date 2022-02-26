@@ -3,8 +3,8 @@ This repository presents the CMOS design of a low power 8×8 hybrid Dadda-Vedic 
 
 ## Table of content 
  * [Abstract](#Abstract)
- * [Design Detail](#Design Detail)
- * [Low power full Adder](#Low power full Adder)
+ * [Design Detail](#Design-Detail)
+ * [Low power full Adder](#Low-power-full-Adder)
 
 
 ## Abstract
