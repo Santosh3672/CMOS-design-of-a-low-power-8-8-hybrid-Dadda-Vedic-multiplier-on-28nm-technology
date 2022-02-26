@@ -94,7 +94,7 @@ The waveform of input and output waveform are shown in fig. We can observe that 
 </p>
 
 ## Design of 8x8 Dadda-Vedic multiplier
-To design an 8×8 multiplier, we have used the existing 4x4 Dadda multiplier and arranged them like a Vedic multiplier where small multipliers are used in cascade to create a big multiplier, but the products of the 4×4 multiplier are handled like a Dadda multiplier to reduce the number of adders in design. We have illustrated the whole architecture of design in Fig.13.
+To design an 8×8 multiplier, we have used the existing 4x4 Dadda multiplier and arranged them like a Vedic multiplier where small multipliers are used in cascade to create a big multiplier. However, we have arranged the products of the 4×4 multiplier as an inverted triangle like the Dadda multiplier. We have illustrated the whole architecture of design in Fig.13.
 
 <p align="center">
 <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8%20mult-dadda_vedic_hybrid.png" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
