@@ -68,6 +68,18 @@ We have designed a half adder in the same approach as the energy-efficient full 
   Fig.9: Waveform of energy efficient half adder<br />
 </p>
 
+Design of 4x4 Dadda Multiplier
+We can create a multiplier now that we have an optimized full adder and half adder. In our design, we are using a Dadda multiplier. The reason for choosing this multiplier was that it focuses on reducing the number of full adder and half adders used in the design compared to a Wallace tree multiplier that tries to reduce each stage. Though the number of reduction stages in both the multiplier is the same, the Dadda multiplier had slightly lower delay due to fewer gates used. 
+
+We have illustrated the working of a 4×4 Dadda multiplier in fig. In this method, we generate partial products using AND gates. Then unlike the Wallace tree multiplier in the Dadda multiplier, the partial products are arranged as an inverted triangle to use fewer full and half adders.
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_dadda_multiplier.jpg" alt="MarineGEO circle logo" style="height: 700px; width: 700px;"/><br />
+  Fig.10: Design architecture of 4x4 Dadda multiplier<br />
+</p>
+
+
+
+
 ## Reference
  - [1]. Dadda, Luigi (May 1965). "Some schemes for parallel multipliers". Alta Frequenza. 34 (5): 349–356.
  - [2]. C.S. Wallace, A suggestion for a fast multiplier, IEEE Trans. Computers, Vol. 13, pp. 14-17, Feb. 1964.
