@@ -71,14 +71,21 @@ We have designed a half adder in the same approach as the energy-efficient full 
 Design of 4x4 Dadda Multiplier
 We can create a multiplier now that we have an optimized full adder and half adder. In our design, we are using a Dadda multiplier. The reason for choosing this multiplier was that it focuses on reducing the number of full adder and half adders used in the design compared to a Wallace tree multiplier that tries to reduce each stage. Though the number of reduction stages in both the multiplier is the same, the Dadda multiplier had slightly lower delay due to fewer gates used. 
 
-We have illustrated the working of a 4×4 Dadda multiplier in fig. In this method, we generate partial products using AND gates. Then unlike the Wallace tree multiplier in the Dadda multiplier, the partial products are arranged as an inverted triangle to use fewer full and half adders.
+We have illustrated the working of a 4×4 Dadda multiplier in Fig.10. In this method, we generate partial products using AND gates. Then unlike the Wallace tree multiplier in the Dadda multiplier, the partial products are arranged as an inverted triangle to use fewer full and half adders.
 <p align="center">
 <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_dadda_multiplier.jpg" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
   Fig.10: Design architecture of 4x4 Dadda multiplier<br />
 </p>
 
-
-
+Fig.11 shows the schematics of the 4x4 multiplier in Synopsys custom compiler. 
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_schematics.png" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
+  Fig.11: Design architecture of 4x4 Dadda multiplier<br />
+</p>
+The waveform of input and output waveform are shown in fig. We can observe that the problem of output voltage swing is not seen here.
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_full.jpg)  |  ![](https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_half.jpg)
 
 ## Reference
  - [1]. Dadda, Luigi (May 1965). "Some schemes for parallel multipliers". Alta Frequenza. 34 (5): 349–356.
