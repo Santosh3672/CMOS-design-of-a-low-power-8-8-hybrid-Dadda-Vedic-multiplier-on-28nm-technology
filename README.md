@@ -7,6 +7,8 @@ This repository presents the CMOS design of a low power 8×8 hybrid Dadda-Vedic 
  * [Low power full Adder](#Low-power-full-Adder)
  * [Low power half adder](#Low-power-half-adder)
  * [Design of 4x4 Dadda multiplier](#Design-of-4x4-Dadda-Multiplier)
+ * [Design of 8x8 Dadda-Vedic multiplier](#Design-of-8x8-Dadda-Vedic-multiplier)
+ * [Reference](#Rererence)
 
 
 ## Abstract
@@ -89,7 +91,14 @@ The waveform of input and output waveform are shown in fig. We can observe that 
   <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_full.jpg" width="500" />
   <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_half.png" width="500" /> 
 <br /> Fig.12: Waveform of 4x4 Dadda multiplier<br />
-  
+</p>
+
+## Design of 8x8 Dadda-Vedic multiplier
+To design an 8×8 multiplier, we have used the existing 4x4 Dadda multiplier and arranged them like a Vedic multiplier where small multipliers are used in cascade to create a big multiplier, but the products of the 4×4 multiplier are handled like a Dadda multiplier to reduce the number of adders in design. We have illustrated the whole architecture of design in Fig.13.
+
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8%20mult-dadda_vedic_hybrid.png" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
+  Fig.13: Schematics of 4x4 Dadda multiplier<br />
 </p>
 
 ## Reference
