@@ -83,9 +83,10 @@ Fig.11 shows the schematics of the 4x4 multiplier in Synopsys custom compiler.
   Fig.11: Design architecture of 4x4 Dadda multiplier<br />
 </p>
 The waveform of input and output waveform are shown in fig. We can observe that the problem of output voltage swing is not seen here.
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![](https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_full.jpg)  |  ![](https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_half.jpg)
+<p float="left">
+  <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_full.jpg" width="100" />
+  <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/4x4_wave_half.jpg" width="100" /> 
+</p>
 
 ## Reference
  - [1]. Dadda, Luigi (May 1965). "Some schemes for parallel multipliers". Alta Frequenza. 34 (5): 349–356.
