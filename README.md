@@ -56,6 +56,18 @@ To test the circuit, we have built a test bench (Fig.6) where we provide all pos
   Fig.7: Waveform of 28T energy efficient full adder<br />
 </p>
 
+## Half Adder:
+We have designed a half adder in the same approach as the energy-efficient full adder. Since we don’t have Cin input, MOSFETs related to Cin including the mux are not used hereRest of the design remain the same. Fig.8 shows the schematics of half adder, and Fig.9 shows the waveform.
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/LP_HA_schematics.jpg" alt="MarineGEO circle logo" style="height: 700px; width: 700px;"/><br />
+  Fig.8: Schematics of energy efficient half adder<br />
+</p>
+
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/LP_HA_waveform.png" alt="MarineGEO circle logo" style="height: 700px; width: 700px;"/><br />
+  Fig.9: Waveform of energy efficient half adder<br />
+</p>
+
 ## Reference
  - [1]. Dadda, Luigi (May 1965). "Some schemes for parallel multipliers". Alta Frequenza. 34 (5): 349–356.
  - [2]. C.S. Wallace, A suggestion for a fast multiplier, IEEE Trans. Computers, Vol. 13, pp. 14-17, Feb. 1964.
