@@ -104,12 +104,27 @@ Since there are 16 inputs of the design, it is difficult to change all the desig
 
 <p align="center">
 <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8_mult_tb.jpg" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
-  Fig.13: Schematics of 4x4 Dadda multiplier<br />
+  Fig.14: Testbench of 8x8 multiplier<br />
 </p>
 
 Fig.15 shows the input and output waveform. 
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8_mult_waveform.png" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
+  Fig.15: Waveform of 8x8 multiplier<br />
+</p>
 
-
+## DC analysis
+To verify the functionality of the design, we have connected the input pins DC supply as shown in Fig.16. So the value of inputs are A =(10110010)binary =(178)decimal, B = (01100010)binary = (98)decimal.
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8_dc_tb.png" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
+  Fig.16: Test bench for DC analysis of 8x8 multiplier<br />
+</p>
+The expected output is Y = (17444)decimal = (0100 0100 0010 0100)binary.
+The output of the simulator(Fig.17) is also the same as the expected output.
+<p align="center">
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8_dc_result.png" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
+  Fig.17: Result of the DC analysis of 8x8 multiplier<br />
+</p>
 
 ## Reference
   [1]. Dadda, Luigi (May 1965). "Some schemes for parallel multipliers". Alta Frequenza. 34 (5): 349–356. \
