@@ -35,7 +35,7 @@ Various designs are available in literature that design full adders using fewer 
 This type of design requires no VSS or VDD supply; hence it consumes less power but has a problem of output voltage swing (output voltage level less than VDD for logic 1 and more than VSS for logic 0), as shown in Fig.2   For this reason, we cant use this design for a cascaded system like a multiplier.
 <p align="center">
 <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/10T_FA_wave%20form.jpg" alt="MarineGEO circle logo" style="height: 600px; width:800px;"/><br />
-  Fig.3: 10T Full adder waveform <br />
+  Fig.3: 10T Full adder waveform with output voltage swing issue <br />
 </p>
 
 
