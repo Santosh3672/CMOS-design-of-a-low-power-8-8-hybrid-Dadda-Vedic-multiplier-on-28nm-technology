@@ -76,7 +76,8 @@ We have designed a half adder in the same approach as the energy-efficient full 
 </p>
 
 ## Design of 4x4 Dadda Multiplier
-We can create a multiplier now that we have an optimized full adder and half adder. In our design, we are using a Dadda multiplier. The reason for choosing this multiplier was that it focuses on reducing the number of full adder and half adders used in the design compared to a Wallace tree multiplier that tries to reduce each stage. Though the number of reduction stages in both the multiplier is the same, the Dadda multiplier had slightly lower delay due to fewer gates used. 
+We can create a multiplier now that we have an optimized full adder and half adder. In our design, we are using a Dadda multiplier. Dadda multiplier is same as Wallace tree multiplier but Dadda multiplier is quite faster than Wallace tree multiplier as it requires fewer gates than the Wallace multiplier thus it leads to fewer power consumption.  
+A Wallace multiplier tries to do as much reduction as possible but a Dadda multiplier tries to do as few reductions as possible. Though the number of reduction stages in both the multiplier is the same, the Dadda multiplier had slightly lower delay due to fewer gates used. 
 
 We have illustrated the working of a 4×4 Dadda multiplier in Fig.10. In this method, we generate partial products using AND gates. Then unlike the Wallace tree multiplier in the Dadda multiplier, the partial products are arranged as an inverted triangle to use fewer full and half adders.
 <p align="center">
