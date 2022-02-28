@@ -127,7 +127,7 @@ Fig.16 shows the input and output waveform.
 ## DC analysis
 To verify the functionality of the design, we have connected the input pins DC supply as shown in Fig.17 So the value of inputs are A =(10110010)binary =(178)decimal, B = (01100010)binary = (98)decimal.
 <p align="center">
-<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8_dc_tb.png" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8_mult_dc_tb.png" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
   Fig.17: Test bench for DC analysis of 8x8 multiplier<br />
 </p>
 The expected output is Y = (17444)decimal = (0100 0100 0010 0100)binary.
