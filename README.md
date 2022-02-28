@@ -10,6 +10,7 @@ This repository presents the CMOS design of a low power 8×8 hybrid Dadda-Vedic 
  * [Design of 8x8 Dadda-Vedic multiplier](#Design-of-8x8-Dadda-Vedic-multiplier)
  * [DC analysis](#DC-analysis)
  * [Reference](#Rererence)
+ * [Acknowledgements](#Acknowledgements)
 
 
 ## Abstract
@@ -132,3 +133,12 @@ The output of the simulator(Fig.17) is also the same as the expected output.
   [1]. Dadda, Luigi (May 1965). "Some schemes for parallel multipliers". Alta Frequenza. 34 (5): 349–356. \
   [2]. C.S. Wallace, A suggestion for a fast multiplier, IEEE Trans. Computers, Vol. 13, pp. 14-17, Feb. 1964.\
   [3]. Mariano Aguirre-Hernandez and Monico Linares-Aranda, “CMOS full adder for energy efficient arithmetic applications” IEEE Transactions on VERY LARGE SCALE INTEGRATION (VLSI) Systems, vol. 19, no. 4, april 2011. 
+
+## Acknowledgements
+
+ - [Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
+ - [Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/')
+ - [Synopsys India](https://www.synopsys.com/)
+ - [Sameer Durgoji, NIT Karnataka](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
+ - [Chinmay panda, IIT Hyderabad](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
+
