@@ -9,6 +9,7 @@ This repository presents the CMOS design of a low power 8×8 hybrid Dadda-Vedic 
  * [Design of 4x4 Dadda multiplier](#Design-of-4x4-Dadda-Multiplier)
  * [Design of 8x8 Dadda-Vedic multiplier](#Design-of-8x8-Dadda-Vedic-multiplier)
  * [DC analysis](#DC-analysis)
+ * [Netlist](#Netlist)
  * [Reference](#Rererence)
  * [Acknowledgements](#Acknowledgements)
 
@@ -136,6 +137,9 @@ The output of the simulator(Fig.18 is also the same as the expected output.
 <img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8_dc_result.png" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
   Fig.18: Result of the DC analysis of 8x8 multiplier<br />
 </p>
+
+## Netlist
+The netlist of the design with testbench is attacched with the repository at https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/Netlist.spi
 
 ## Reference
   [1]. Dadda, Luigi (May 1965). "Some schemes for parallel multipliers". Alta Frequenza. 34 (5): 349–356. \
