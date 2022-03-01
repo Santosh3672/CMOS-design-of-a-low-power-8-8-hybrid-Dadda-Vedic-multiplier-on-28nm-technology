@@ -1,0 +1,309 @@
+*  Generated for: PrimeSim
+*  Design library name: cp_lib1
+*  Design cell name: sp_8x8_mult_1_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Tue Mar  1 18:06:50 2022
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : sp_nand
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sp_nand a b vdd vss y
+xm1 net5 b vss vss n105 w=0.2u l=0.03u nf=1 m=1
+xm0 y a net5 vss n105 w=0.2u l=0.03u nf=1 m=1
+xm3 y b vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm4 y a vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+.ends sp_nand
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : sp_inverter
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sp_inverter in out vdd vss
+xm0 out in vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm1 out in vdd vdd p105 w=0.3u l=0.03u nf=1 m=1
+.ends sp_inverter
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : sp_and
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sp_and a b vdd vss y
+xi0 a b vdd vss net9 sp_nand
+xi1 net9 y vdd vss sp_inverter
+.ends sp_and
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : sp_FA_26T
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sp_fa_26t a b cin co so vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd!
+xm41 net127 cin vss vt_bulk_n_gnd! n105 w=0.3u l=0.03u nf=1 m=1
+xm40 net124 b vss vt_bulk_n_gnd! n105 w=0.3u l=0.03u nf=1 m=1
+xm39 net121 a vss vt_bulk_n_gnd! n105 w=0.3u l=0.03u nf=1 m=1
+xm38 co cin net110 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm35 co net127 net104 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm34 b net121 net110 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm17 b net121 net77 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm26 so cin net56 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm28 so net127 net77 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm24 net121 net124 net56 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm30 b a net104 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm19 net124 a net77 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm31 vss net121 net104 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm21 a b net56 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm44 net127 cin vdd vt_bulk_p_vdd! p105 w=0.6u l=0.03u nf=1 m=1
+xm43 net124 b vdd vt_bulk_p_vdd! p105 w=0.6u l=0.03u nf=1 m=1
+xm42 net121 a vdd vt_bulk_p_vdd! p105 w=0.6u l=0.03u nf=1 m=1
+xm37 co net127 net110 vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm36 co cin net104 vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm33 a b net110 vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm22 b net121 net56 vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm20 a b net77 vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm18 net121 net124 net77 vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm25 so net127 net56 vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm27 so cin net77 vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm23 net124 a net56 vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm29 a net124 net104 vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm32 vdd net124 net110 vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+.ends sp_fa_26t
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : sp_HA_LP
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sp_ha_lp a b co sum vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd!
+xm9 vss net11 co vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm8 b a co vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm7 b net11 sum vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm6 net8 a sum vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm1 net8 b vss vt_bulk_n_gnd! n105 w=0.3u l=0.03u nf=1 m=1
+xm0 net11 a vss vt_bulk_n_gnd! n105 w=0.3u l=0.03u nf=1 m=1
+xm10 a net8 co vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm5 a b sum vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm4 net11 net8 sum vt_bulk_p_vdd! p105 w=0.2u l=0.03u nf=1 m=1
+xm3 net11 a vdd vt_bulk_p_vdd! p105 w=0.6u l=0.03u nf=1 m=1
+xm2 net8 b vdd vt_bulk_p_vdd! p105 w=0.6u l=0.03u nf=1 m=1
+.ends sp_ha_lp
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : sp_buff
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sp_buff in out vt_bulk_n_gnd! vt_bulk_p_vdd!
+xm1 out net15 gnd! vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm0 net15 in gnd! vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm4 net15 in net14 vt_bulk_p_vdd! p105 w=0.1u l=0.03u nf=1 m=1
+xm5 out net15 net14 vt_bulk_p_vdd! p105 w=0.1u l=0.03u nf=1 m=1
+v6 net14 gnd! dc=0.9
+.ends sp_buff
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : sp_4x4_mul
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sp_4x4_mul a0 a1 a2 a3 b0 b1 b2 b3 vdd vss y0 y1 y2 y3 y4 y5 y6 y7
++ vt_bulk_n_gnd! vt_bulk_p_vdd!
+xi17 a3 b3 vdd vss net202 sp_and
+xi16 a3 b2 vdd vss net164 sp_and
+xi15 a3 b1 vdd vss net111 sp_and
+xi14 a3 b0 vdd vss net176 sp_and
+xi13 a2 b3 vdd vss net165 sp_and
+xi12 a2 b2 vdd vss net110 sp_and
+xi11 a2 b1 vdd vss net104 sp_and
+xi10 a2 b0 vdd vss net97 sp_and
+xi9 a1 b3 vdd vss net109 sp_and
+xi8 a1 b2 vdd vss net103 sp_and
+xi7 a1 b1 vdd vss net96 sp_and
+xi6 a1 b0 vdd vss net139 sp_and
+xi5 a0 b3 vdd vss net102 sp_and
+xi3 a0 b1 vdd vss net138 sp_and
+xi4 a0 b2 vdd vss net95 sp_and
+xi0 a0 b0 vdd vss net225 sp_and
+xi31 net202 net203 net204 net222 net223 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd!
++ sp_fa_26t
+xi29 net186 net187 net188 net197 net229 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd!
++ sp_fa_26t
+xi30 net218 net128 net197 net204 net224 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd!
++ sp_fa_26t
+xi23 net165 net164 net163 net203 net128 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd!
++ sp_fa_26t
+xi21 net116 net117 net176 net186 net151 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd!
++ sp_fa_26t
+xi20 net109 net110 net111 net163 net171 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd!
++ sp_fa_26t
+xi19 net102 net103 net104 net170 net117 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd!
++ sp_fa_26t
+xi18 net95 net96 net97 net116 net217 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd!
++ sp_fa_26t
+xi26 net221 net151 net188 net228 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_ha_lp
+xi25 net144 net217 net221 net227 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_ha_lp
+xi24 net138 net139 net144 net226 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_ha_lp
+xi28 net170 net171 net218 net187 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_ha_lp
+xi40 net222 y7 vt_bulk_n_gnd! vt_bulk_p_vdd! sp_buff
+xi39 net223 y6 vt_bulk_n_gnd! vt_bulk_p_vdd! sp_buff
+xi38 net224 y5 vt_bulk_n_gnd! vt_bulk_p_vdd! sp_buff
+xi37 net229 y4 vt_bulk_n_gnd! vt_bulk_p_vdd! sp_buff
+xi36 net228 y3 vt_bulk_n_gnd! vt_bulk_p_vdd! sp_buff
+xi35 net227 y2 vt_bulk_n_gnd! vt_bulk_p_vdd! sp_buff
+xi34 net226 y1 vt_bulk_n_gnd! vt_bulk_p_vdd! sp_buff
+xi33 net225 y0 vt_bulk_n_gnd! vt_bulk_p_vdd! sp_buff
+.ends sp_4x4_mul
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : sp_8_FA
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sp_8_fa a0 a1 a2 a3 a4 a5 a6 a7 b0 b1 b2 b3 b4 b5 b6 b7 c0 c1 c2 c3 c4
++ c5 c6 c7 co0 co1 co2 co3 co4 co5 co6 co7 vdd vss y0 y1 y2 y3 y4 y5 y6 y7
++ vt_bulk_n_gnd! vt_bulk_p_vdd!
+xi7 a7 b7 c7 co7 y7 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi6 a6 b6 c6 co6 y6 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi5 a5 b5 c5 co5 y5 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi4 a4 b4 c4 co4 y4 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi3 a3 b3 c3 co3 y3 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi2 a2 b2 c2 co2 y2 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi1 a1 b1 c1 co1 y1 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi0 a0 b0 c0 co0 y0 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+.ends sp_8_fa
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : sp_8_bit_adder
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sp_8_bit_adder a0 a1 a2 a3 a4 a5 a6 a7 b0 b1 b2 b3 b4 b5 b6 b7 vdd vss
++ y0 y1 y2 y3 y4 y5 y6 y7 y8 vt_bulk_n_gnd! vt_bulk_p_vdd!
+xi7 a7 b7 net56 y8 y7 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi6 a6 b6 net49 net56 y6 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi5 a5 b5 net42 net49 y5 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi4 a4 b4 net35 net42 y4 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi3 a3 b3 net28 net35 y3 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi2 a2 b2 net21 net28 y2 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi1 a1 b1 net14 net21 y1 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+xi0 a0 b0 vss net14 y0 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_fa_26t
+.ends sp_8_bit_adder
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : sp_8x8_mult_1
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sp_8x8_mult_1 a0 a1 a2 a3 a4 a5 a6 a7 b0 b1 b2 b3 b4 b5 b6 b7 vdd vss y0
++  y1 y2 y3 y4 y5 y6 y7 y8 y9 y10 y11 y12 y13 y14 y15 y16 vt_bulk_n_gnd!
++ vt_bulk_p_vdd!
+xi3 a4 a5 a6 a7 b4 b5 b6 b7 vdd vss net123 net124 net125 net126 net201 net241
++ net243 net246 vt_bulk_n_gnd! vt_bulk_p_vdd! sp_4x4_mul
+xi2 a4 a5 a6 a7 b0 b1 b2 b3 vdd vss net119 net120 net121 net122 net115 net116
++ net117 net118 vt_bulk_n_gnd! vt_bulk_p_vdd! sp_4x4_mul
+xi1 a0 a1 a2 a3 b4 b5 b6 b7 vdd vss net111 net112 net113 net114 net107 net127
++ net109 net110 vt_bulk_n_gnd! vt_bulk_p_vdd! sp_4x4_mul
+xi0 a0 a1 a2 a3 b0 b1 b2 b3 vdd vss y0 y1 y2 y3 net103 net104 net105 net106
++ vt_bulk_n_gnd! vt_bulk_p_vdd! sp_4x4_mul
+xi5 net103 net104 net105 net106 net107 net127 net109 net110 net111 net112 net113
++ net114 net115 net116 net117 net118 net119 net120 net121 net122 net123 net124
++ net125 net126 net186 net188 net190 net192 net194 net196 net198 net200 vdd vss
++ y4 net187 net189 net191 net193 net195 net197 net199 vt_bulk_n_gnd!
++ vt_bulk_p_vdd! sp_8_fa
+xi7 net186 net188 net190 net192 net194 net196 net198 net200 net187 net189 net191
++ net193 net195 net197 net199 net201 vdd vss y5 y6 y7 y8 y9 y10 y11 y12 net226
++ vt_bulk_n_gnd! vt_bulk_p_vdd! sp_8_bit_adder
+xi13 net226 net241 net233 y13 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_ha_lp
+xi14 net243 net233 net239 y14 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_ha_lp
+xi15 net246 net239 y16 y15 vdd vss vt_bulk_n_gnd! vt_bulk_p_vdd! sp_ha_lp
+.ends sp_8x8_mult_1
+
+********************************************************************************
+* Library          : cp_lib1
+* Cell             : sp_8x8_mult_1_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi27 gnd! net105 gnd! net105 gnd! net105 gnd! net105 gnd! b1 gnd! b3 gnd! b5
++ gnd! b7 net105 gnd! y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 y10 y11 y12 y13 y14 y15 y16
++ gnd! vdd! sp_8x8_mult_1
+v2 net105 gnd! dc=0.9
+c26 y0 gnd! c=1p
+c25 y1 gnd! c=1p
+c24 y2 gnd! c=1p
+c16 y3 gnd! c=1p
+c15 y4 gnd! c=1p
+c14 y5 gnd! c=1p
+c13 net107 gnd! c=1p
+c12 net108 gnd! c=1p
+c11 net109 gnd! c=1p
+c10 y9 gnd! c=1p
+c9 y10 gnd! c=1p
+c8 y11 gnd! c=1p
+c7 y12 gnd! c=1p
+c6 y13 gnd! c=1p
+c5 y14 gnd! c=1p
+c4 y15 gnd! c=1p
+c3 y16 gnd! c=1p
+v23 b1 gnd! dc=0 pulse ( 0 0.9 0 0.1u 0.1u 40u 80u )
+v22 b3 gnd! dc=0 pulse ( 0 0.9 0 0.1u 0.1u 20u 40u )
+v21 b5 gnd! dc=0 pulse ( 0 0.9 0 0.1u 0.1u 10u 20u )
+v20 b7 gnd! dc=0 pulse ( 0 0.9 0 0.1u 0.1u 5u 10u )
+
+
+
+
+
+
+
+
+.tran '0' '80u' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(b1) v(b3) v(b5) v(b7) v(y0) v(y1) v(y10) v(y11) v(y12) v(y13)
++ v(y14) v(y15) v(y2) v(y3) v(y4) v(y5) v(y6) v(y7) v(y8) v(y9)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
