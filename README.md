@@ -120,7 +120,7 @@ Since there are 16 inputs of the design, it is difficult to change all the desig
 
 Fig.16 shows the input and output waveform. 
 <p align="center">
-<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8_mult_waveform.png" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
+<img src="https://github.com/Santosh3672/CMOS-design-of-a-low-power-8-8-hybrid-Dadda-Vedic-multiplier-on-28nm-technology/blob/main/8x8%20mult%20wave.jpg" alt="MarineGEO circle logo" style="height: 500px; width: 900px;"/><br />
   Fig.16: Waveform of 8x8 multiplier<br />
 </p>
 
